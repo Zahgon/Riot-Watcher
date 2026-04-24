@@ -65,3 +65,5 @@ target/
 api_key
 .venv
 .vs
+.aider*
+logs/
