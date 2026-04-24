@@ -14,7 +14,4 @@ class ThrowOnErrorHandler(RequestHandler):
         url: str,
         response: requests.Response,
     ) -> None:
-        try:
-            response.raise_for_status()
-        except requests.HTTPError as err:
-            raise ApiError(*err.args, request=err.request, response=err.response)
+        pass

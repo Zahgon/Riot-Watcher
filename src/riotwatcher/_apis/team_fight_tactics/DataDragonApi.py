@@ -9,38 +9,34 @@ class DataDragonApi:
         self._base_api = base_api
 
     def arenas(self, version: str, locale: str = None):
-        return self._request(DataDragonUrls.arenas, version, locale)
+        pass
 
     def augments(self, version: str, locale: str = None):
-        return self._request(DataDragonUrls.augments, version, locale)
+        pass
 
     def champions(self, version: str, locale: str = None):
-        return self._request(DataDragonUrls.champions, version, locale)
+        pass
 
     def items(self, version: str, locale: str = None):
-        return self._request(DataDragonUrls.items, version, locale)
+        pass
 
     def queues(self, version: str, locale: str = None):
-        return self._request(DataDragonUrls.queues, version, locale)
+        pass
 
     def regalia(self, version: str, locale: str = None):
-        return self._request(DataDragonUrls.regalia, version, locale)
+        pass
 
     def tacticians(self, version: str, locale: str = None):
-        return self._request(DataDragonUrls.tacticians, version, locale)
+        pass
 
     def traits(self, version: str, locale: str = None):
-        return self._request(DataDragonUrls.traits, version, locale)
+        pass
 
     def versions_for_region(self, region: str):
-        region = re.sub(r"\d", "", region)
-        url, query = DataDragonUrls.versions(region=region)
-        return self._base_api.raw_request_static(url, query)
+        pass
 
     def versions_all(self):
-        url, query = DataDragonUrls.versions_all()
-        return self._base_api.raw_request_static(url, query)
+        pass
 
     def _request(self, endpoint: Endpoint, version: str, locale: str):
-        url, query = endpoint(version=version, locale=locale if locale else "en_US")
-        return self._base_api.raw_request_static(url, query)
+        pass

@@ -66,7 +66,7 @@ class LorWatcher:
 
         :rtype: legends_of_runeterra.MatchApi
         """
-        return self._match
+        pass
 
     @property
     def ranked(self) -> RankedApi:
@@ -75,4 +75,4 @@ class LorWatcher:
 
         :rtype: legends_of_runeterra.RankedApi
         """
-        return self._ranked
+        pass

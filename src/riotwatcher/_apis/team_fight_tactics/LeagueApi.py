@@ -23,9 +23,7 @@ class LeagueApi(NamedEndpoint):
 
         :returns: LeagueListDTO
         """
-        return self._request_endpoint(
-            self.challenger.__name__, region, LeagueApiUrls.challenger
-        )
+        pass
 
     def by_summoner(self, region: str, encrypted_summoner_id: str):
         """
@@ -33,12 +31,7 @@ class LeagueApi(NamedEndpoint):
 
         :returns: Set[LeagueEntryDTO]
         """
-        return self._request_endpoint(
-            self.by_summoner.__name__,
-            region,
-            LeagueApiUrls.by_summoner,
-            encrypted_summoner_id=encrypted_summoner_id,
-        )
+        pass
 
     def entries(self, region: str, tier: str, division: str, page: int = 1):
         """
@@ -46,14 +39,7 @@ class LeagueApi(NamedEndpoint):
 
         :returns: Set[LeagueEntryDTO]
         """
-        return self._request_endpoint(
-            self.entries.__name__,
-            region,
-            LeagueApiUrls.entries,
-            tier=tier,
-            division=division,
-            page=page,
-        )
+        pass
 
     def grandmaster(self, region: str):
         """
@@ -61,9 +47,7 @@ class LeagueApi(NamedEndpoint):
 
         :returns: LeagueListDTO
         """
-        return self._request_endpoint(
-            self.grandmaster.__name__, region, LeagueApiUrls.grandmaster
-        )
+        pass
 
     def by_id(self, region: str, league_id: str):
         """
@@ -71,9 +55,7 @@ class LeagueApi(NamedEndpoint):
 
         :returns: LeagueListDTO
         """
-        return self._request_endpoint(
-            self.by_id.__name__, region, LeagueApiUrls.by_id, league_id=league_id
-        )
+        pass
 
     def master(self, region: str):
         """
@@ -81,9 +63,7 @@ class LeagueApi(NamedEndpoint):
 
         :returns: LeagueListDTO
         """
-        return self._request_endpoint(
-            self.master.__name__, region, LeagueApiUrls.master
-        )
+        pass
 
     def rated_ladders(self, region: str, queue: str):
         """
@@ -91,9 +71,4 @@ class LeagueApi(NamedEndpoint):
 
         :returns: TopRatedLadderEntryDto
         """
-        return self._request_endpoint(
-            self.rated_ladders.__name__,
-            region,
-            LeagueApiUrls.rated_ladders,
-            queue=queue,
-        )
+        pass

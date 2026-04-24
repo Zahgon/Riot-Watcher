@@ -28,12 +28,7 @@ class ClashApiV1(NamedEndpoint):
 
         :returns: List[PlayerDTO]: represents the summoner's info for the current clash.
         """
-        return self._request_endpoint(
-            self.by_summoner.__name__,
-            region,
-            ClashApiV1Urls.by_summoner,
-            summoner_id=summoner_id,
-        )
+        pass
 
     def by_team(self, region: str, team_id: str):
         """
@@ -44,9 +39,7 @@ class ClashApiV1(NamedEndpoint):
 
         :returns: TeamDTO: represents a clash team
         """
-        return self._request_endpoint(
-            self.by_team.__name__, region, ClashApiV1Urls.by_team, team_id=team_id,
-        )
+        pass
 
     def tournaments(self, region: str):
         """
@@ -56,9 +49,7 @@ class ClashApiV1(NamedEndpoint):
 
         :returns: List[TournamentDTO]: represents all of the current tournaments active
         """
-        return self._request_endpoint(
-            self.tournaments.__name__, region, ClashApiV1Urls.tournaments,
-        )
+        pass
 
     def tournament_by_team(self, region: str, team_id: str):
         """
@@ -69,12 +60,7 @@ class ClashApiV1(NamedEndpoint):
 
         :returns: TournamentDTO: represents a clash tournament
         """
-        return self._request_endpoint(
-            self.tournament_by_team.__name__,
-            region,
-            ClashApiV1Urls.tournament_by_team,
-            team_id=team_id,
-        )
+        pass
 
     def by_tournament(self, region: str, tournament_id: str):
         """
@@ -85,9 +71,4 @@ class ClashApiV1(NamedEndpoint):
 
         :returns: TournamentDTO: represents a clash tournament
         """
-        return self._request_endpoint(
-            self.by_tournament.__name__,
-            region,
-            ClashApiV1Urls.by_tournament,
-            tournament_id=tournament_id,
-        )
+        pass

@@ -27,12 +27,7 @@ class SpectatorApiV5(NamedEndpoint):
 
         :returns: CurrentGameInfo
         """
-        return self._request_endpoint(
-            self.by_summoner.__name__,
-            region,
-            SpectatorApiV5Urls.by_summoner,
-            encrypted_puuid=encrypted_puuid,
-        )
+        pass
 
     def featured_games(self, region: str):
         """
@@ -42,6 +37,4 @@ class SpectatorApiV5(NamedEndpoint):
 
         :returns: FeaturedGames
         """
-        return self._request_endpoint(
-            self.featured_games.__name__, region, SpectatorApiV5Urls.featured_games
-        )
+        pass

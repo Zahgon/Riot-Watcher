@@ -28,6 +28,4 @@ class LolStatusApiV3(NamedEndpoint):
 
         :returns: ShardStatus
         """
-        return self._request_endpoint(
-            self.shard_data.__name__, region, LolStatusApiV3Urls.shard_data
-        )
+        pass

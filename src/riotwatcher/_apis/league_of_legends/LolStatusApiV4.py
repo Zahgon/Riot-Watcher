@@ -28,6 +28,4 @@ class LolStatusApiV4(NamedEndpoint):
 
         :returns: PlatformStatus
         """
-        return self._request_endpoint(
-            self.platform_data.__name__, region, LolStatusApiV4Urls.platform_data
-        )
+        pass

@@ -24,6 +24,4 @@ class ContentApi(NamedEndpoint):
 
         :returns: ContentDto
         """
-        return self._request_endpoint(
-            self.contents.__name__, region, ContentApiUrls.contents, locale=locale
-        )
+        pass

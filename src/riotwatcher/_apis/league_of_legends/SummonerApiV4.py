@@ -27,12 +27,7 @@ class SummonerApiV4(NamedEndpoint):
 
         :returns: SummonerDTO: represents a summoner
         """
-        return self._request_endpoint(
-            self.by_account.__name__,
-            region,
-            SummonerApiV4Urls.by_account,
-            encrypted_account_id=encrypted_account_id,
-        )
+        pass
 
     def by_puuid(self, region: str, encrypted_puuid: str):
         """
@@ -43,12 +38,7 @@ class SummonerApiV4(NamedEndpoint):
 
         :returns: SummonerDTO: represents a summoner
         """
-        return self._request_endpoint(
-            self.by_puuid.__name__,
-            region,
-            SummonerApiV4Urls.by_puuid,
-            encrypted_puuid=encrypted_puuid,
-        )
+        pass
 
     def by_id(self, region: str, encrypted_summoner_id: str):
         """
@@ -59,9 +49,4 @@ class SummonerApiV4(NamedEndpoint):
 
         :returns: SummonerDTO: represents a summoner
         """
-        return self._request_endpoint(
-            self.by_id.__name__,
-            region,
-            SummonerApiV4Urls.by_id,
-            encrypted_summoner_id=encrypted_summoner_id,
-        )
+        pass

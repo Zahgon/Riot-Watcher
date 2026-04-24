@@ -69,7 +69,7 @@ class TftWatcher:
 
         :rtype: team_fight_tactics.LeagueApi
         """
-        return self._league
+        pass
 
     @property
     def match(self) -> MatchApi:
@@ -78,7 +78,7 @@ class TftWatcher:
 
         :rtype: team_fight_tactics.MatchApi
         """
-        return self._match
+        pass
 
     @property
     def summoner(self) -> SummonerApi:
@@ -87,7 +87,7 @@ class TftWatcher:
 
         :rtype: team_fight_tactics.SummonerApi
         """
-        return self._summoner
+        pass
     
     @property
     def data_dragon(self) -> DataDragonApi:
@@ -96,4 +96,4 @@ class TftWatcher:
 
         :rtype: team_fight_tactics.DataDragonApi
         """
-        return self._data_dragon
+        pass

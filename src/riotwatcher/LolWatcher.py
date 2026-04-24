@@ -127,7 +127,7 @@ class LolWatcher:
 
         :rtype: league_of_legends.ChampionMasteryApiV4
         """
-        return self._champion_mastery
+        pass
 
     @property
     def champion(self) -> ChampionApiV3:
@@ -136,7 +136,7 @@ class LolWatcher:
 
         :rtype: league_of_legends.ChampionApiV3
         """
-        return self._champion
+        pass
 
     @property
     def clash(self) -> ClashApiV1:
@@ -145,7 +145,7 @@ class LolWatcher:
 
         :rtype: league_of_legends.ClashApiV1
         """
-        return self._clash
+        pass
 
     @property
     def league(self) -> LeagueApiV4:
@@ -154,7 +154,7 @@ class LolWatcher:
 
         :rtype: league_of_legends.LeagueApiV4
         """
-        return self._league
+        pass
 
     @property
     def lol_status(self) -> Union[LolStatusApiV3, LolStatusApiV4]:
@@ -163,7 +163,7 @@ class LolWatcher:
 
         :rtype: league_of_legends.LolStatusApiV3
         """
-        return self._lol_status
+        pass
 
     @property
     def lol_status_v3(self) -> LolStatusApiV3:
@@ -172,7 +172,7 @@ class LolWatcher:
 
         :rtype: league_of_legends.LolStatusApiV3
         """
-        return self._lol_status_v3
+        pass
 
     @property
     def lol_status_v4(self) -> LolStatusApiV4:
@@ -181,7 +181,7 @@ class LolWatcher:
 
         :rtype: league_of_legends.LolStatusApiV4
         """
-        return self._lol_status_v4
+        pass
 
     @property
     def match(self) -> MatchApiV5:
@@ -190,7 +190,7 @@ class LolWatcher:
 
         :rtype: league_of_legends.MatchApiV5
         """
-        return self._match
+        pass
 
     @property
     def match_v4(self):
@@ -217,7 +217,7 @@ class LolWatcher:
 
         :rtype: league_of_legends.SpectatorApiV4
         """
-        return self._spectator
+        pass
 
     @property
     def data_dragon(self) -> DataDragonApi:
@@ -226,7 +226,7 @@ class LolWatcher:
 
         :rtype: league_of_legends.DataDragonApi
         """
-        return self._data_dragon
+        pass
 
     @property
     def summoner(self) -> SummonerApiV4:
@@ -235,7 +235,7 @@ class LolWatcher:
 
         :rtype: league_of_legends.SummonerApiV4
         """
-        return self._summoner
+        pass
 
     @property
     def third_party_code(self) -> None:
@@ -253,4 +253,4 @@ class LolWatcher:
 
         :rtype: league_of_legends.ChallengesApiV1
         """
-        return self._challenges
+        pass

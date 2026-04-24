@@ -26,9 +26,7 @@ class ChallengesApiV1(NamedEndpoint):
 
         :returns: ChallengeConfigInfoDto
         """
-        return self._request_endpoint(
-            self.config.__name__, region, ChallengesApiV1Urls.config
-        )
+        pass
 
     def percentiles(self, region: str):
         """
@@ -38,9 +36,7 @@ class ChallengesApiV1(NamedEndpoint):
 
         :returns: Map[Long, Map[Integer, Map[Level, Double]]]
         """
-        return self._request_endpoint(
-            self.percentiles.__name__, region, ChallengesApiV1Urls.percentiles
-        )
+        pass
 
     def challenge_config(self, region: str, challenge_id: int):
         """
@@ -52,12 +48,7 @@ class ChallengesApiV1(NamedEndpoint):
 
         :returns: ChallengeConfigInfoDto
         """
-        return self._request_endpoint(
-            self.challenge_config.__name__,
-            region,
-            ChallengesApiV1Urls.challenge_config,
-            challengeId=challenge_id,
-        )
+        pass
 
     def leaderboards(self, region: str, challenge_id: int, level: str):
         """
@@ -71,13 +62,7 @@ class ChallengesApiV1(NamedEndpoint):
 
         :returns: List[ApexPlayerInfoDto]
         """
-        return self._request_endpoint(
-            self.leaderboards.__name__,
-            region,
-            ChallengesApiV1Urls.leaderboards,
-            challengeId=challenge_id,
-            level=level,
-        )
+        pass
 
     def percentiles_by_challenge_id(self, region: str, challenge_id: int):
         """
@@ -89,12 +74,7 @@ class ChallengesApiV1(NamedEndpoint):
 
         :returns: Map[Level, double]
         """
-        return self._request_endpoint(
-            self.percentiles_by_challenge_id.__name__,
-            region,
-            ChallengesApiV1Urls.percentiles_by_challenge_id,
-            challengeId=challenge_id,
-        )
+        pass
 
     def by_puuid(self, region: str, puuid: str):
         """
@@ -106,9 +86,4 @@ class ChallengesApiV1(NamedEndpoint):
 
         :returns: PlayerInfoDto
         """
-        return self._request_endpoint(
-            self.by_puuid.__name__,
-            region,
-            ChallengesApiV1Urls.by_puuid,
-            puuid=puuid,
-        )
+        pass

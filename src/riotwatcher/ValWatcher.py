@@ -66,7 +66,7 @@ class ValWatcher:
 
         :rtype: valorant.ContentApi
         """
-        return self._content
+        pass
 
     @property
     def match(self) -> MatchApi:
@@ -75,4 +75,4 @@ class ValWatcher:
 
         :rtype: valorant.MatchApi
         """
-        return self._match
+        pass

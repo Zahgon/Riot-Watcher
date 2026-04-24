@@ -9,45 +9,37 @@ class DataDragonApi:
         self._base_api = base_api
 
     def champions(self, version: str, full: bool = False, locale=None):
-        return self._request(
-            DataDragonUrls.champions_full if full else DataDragonUrls.champions,
-            version,
-            locale,
-        )
+        pass
 
     def items(self, version: str, locale: str = None):
-        return self._request(DataDragonUrls.items, version, locale)
+        pass
 
     def languages(self, version: str, locale: str = None):
-        return self._request(DataDragonUrls.languages, version, locale)
+        pass
 
     def maps(self, version: str, locale: str = None):
-        return self._request(DataDragonUrls.maps, version, locale)
+        pass
 
     def masteries(self, version: str, locale: str = None):
-        return self._request(DataDragonUrls.masteries, version, locale)
+        pass
 
     def profile_icons(self, version: str, locale: str = None):
-        return self._request(DataDragonUrls.profile_icons, version, locale)
+        pass
 
     def runes(self, version: str, locale: str = None):
-        return self._request(DataDragonUrls.runes, version, locale)
+        pass
 
     def runes_reforged(self, version: str, locale: str = None):
-        return self._request(DataDragonUrls.runes_reforged, version, locale)
+        pass
 
     def summoner_spells(self, version: str, locale: str = None):
-        return self._request(DataDragonUrls.summoner_spells, version, locale)
+        pass
 
     def versions_for_region(self, region: str):
-        region = re.sub(r"\d", "", region)
-        url, query = DataDragonUrls.versions(region=region)
-        return self._base_api.raw_request_static(url, query)
+        pass
 
     def versions_all(self):
-        url, query = DataDragonUrls.versions_all()
-        return self._base_api.raw_request_static(url, query)
+        pass
 
     def _request(self, endpoint: Endpoint, version: str, locale: str):
-        url, query = endpoint(version=version, locale=locale if locale else "en_US")
-        return self._base_api.raw_request_static(url, query)
+        pass

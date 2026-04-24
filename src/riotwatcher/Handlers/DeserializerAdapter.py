@@ -19,7 +19,7 @@ class DeserializerAdapter(RequestHandler):
         url: str,
         response: Response,
     ) -> Any:
-        return self._deserializer.deserialize(endpoint_name, method_name, response.text)
+        pass
 
     def after_static_request(self, url: str, response: Response) -> Any:
-        return self._deserializer.deserialize(None, None, response.text)
+        pass

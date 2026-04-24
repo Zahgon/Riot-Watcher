@@ -32,7 +32,4 @@ class NamedEndpoint:
         :oaram Endpoint endpoint:   The endpoint to use to build URL and query
                                     parameters
         """
-        url, query = endpoint(platform=region, **kwargs)
-        return self._base_api.raw_request(
-            self._endpoint_name, method_name, region, url, query
-        )
+        pass

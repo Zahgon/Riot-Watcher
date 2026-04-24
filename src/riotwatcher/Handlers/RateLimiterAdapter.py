@@ -33,15 +33,7 @@ class RateLimiterAdapter(RequestHandler):
         :param query_params: dict: the parameters to the url that is being queried,
                                    e.g. ?key1=val&key2=val2
         """
-        wait_until = self._limiter.wait_until(region, endpoint_name, method_name)
-
-        if wait_until is not None and wait_until > datetime.datetime.now():
-            to_wait = wait_until - datetime.datetime.now()
-
-            LOG.info(
-                "waiting for %s seconds...", to_wait.total_seconds(),
-            )
-            time.sleep(to_wait.total_seconds())
+        pass
 
     def after_request(
         self,
@@ -61,8 +53,4 @@ class RateLimiterAdapter(RequestHandler):
         :param response: the response received. This is a response from the "requests"
                          library
         """
-        self._limiter.record_response(
-            region, endpoint_name, method_name, response.status_code, response.headers
-        )
-
-        return response
+        pass

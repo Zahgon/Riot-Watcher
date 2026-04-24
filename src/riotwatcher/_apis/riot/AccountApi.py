@@ -23,9 +23,7 @@ class AccountApi(NamedEndpoint):
 
         :returns: AcountDto
         """
-        return self._request_endpoint(
-            self.by_puuid.__name__, region, AccountApiUrls.by_puuid, puuid=puuid
-        )
+        pass
 
     def by_riot_id(self, region: str, game_name: str, tag_line: str):
         """
@@ -33,13 +31,7 @@ class AccountApi(NamedEndpoint):
 
         :returns: AccountDto
         """
-        return self._request_endpoint(
-            self.by_riot_id.__name__,
-            region,
-            AccountApiUrls.by_riot_id,
-            game_name=game_name,
-            tag_line=tag_line,
-        )
+        pass
 
     def active_shard(self, region: str, game: str, puuid: str):
         """
@@ -47,10 +39,4 @@ class AccountApi(NamedEndpoint):
 
         :returns: ActiveShardDto
         """
-        return self._request_endpoint(
-            self.active_shard.__name__,
-            region,
-            AccountApiUrls.active_shard,
-            game=game,
-            puuid=puuid,
-        )
+        pass

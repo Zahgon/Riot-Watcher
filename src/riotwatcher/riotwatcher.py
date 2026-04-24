@@ -64,4 +64,4 @@ class RiotWatcher:
 
         :rtype: riot.AccountApi
         """
-        return self._account
+        pass

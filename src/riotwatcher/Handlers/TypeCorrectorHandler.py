@@ -27,17 +27,4 @@ class TypeCorrectorHandler(RequestHandler):
         :param query_params: dict: the parameters to the url that is being queried,
                                    e.g. ?key1=val&key2=val2
         """
-        if query_params is not None:
-            for key, value in query_params.items():
-                if isinstance(value, bool):
-                    query_params[key] = str(value).lower()
-
-                # check to see if we have a list/tuple, but not a string
-                if (
-                    not hasattr(value, "strip")
-                    and hasattr(value, "__getitem__")
-                    or hasattr(value, "__iter__")
-                ):
-                    for idx, val in enumerate(value):
-                        if isinstance(val, bool):
-                            value[idx] = str(val).lower()
+        pass

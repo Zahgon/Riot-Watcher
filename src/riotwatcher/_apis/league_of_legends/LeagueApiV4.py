@@ -27,12 +27,7 @@ class LeagueApiV4(NamedEndpoint):
 
         :returns: LeagueListDTO
         """
-        return self._request_endpoint(
-            self.challenger_by_queue.__name__,
-            region,
-            LeagueApiV4Urls.challenger_by_queue,
-            queue=queue,
-        )
+        pass
 
     def grandmaster_by_queue(self, region: str, queue: str):
         """
@@ -43,12 +38,7 @@ class LeagueApiV4(NamedEndpoint):
 
         :returns: LeagueListDTO
         """
-        return self._request_endpoint(
-            self.grandmaster_by_queue.__name__,
-            region,
-            LeagueApiV4Urls.grandmaster_by_queue,
-            queue=queue,
-        )
+        pass
 
     def masters_by_queue(self, region: str, queue: str):
         """
@@ -59,12 +49,7 @@ class LeagueApiV4(NamedEndpoint):
 
         :returns: LeagueListDTO
         """
-        return self._request_endpoint(
-            self.masters_by_queue.__name__,
-            region,
-            LeagueApiV4Urls.master_by_queue,
-            queue=queue,
-        )
+        pass
 
     def by_id(self, region: str, league_id: str):
         """
@@ -75,9 +60,7 @@ class LeagueApiV4(NamedEndpoint):
 
         :returns: LeagueListDTO
         """
-        return self._request_endpoint(
-            self.by_id.__name__, region, LeagueApiV4Urls.by_id, league_id=league_id
-        )
+        pass
 
     def by_summoner(self, region: str, encrypted_summoner_id: str):
         """
@@ -88,12 +71,7 @@ class LeagueApiV4(NamedEndpoint):
 
         :returns: Set[LeagueEntryDTO]
         """
-        return self._request_endpoint(
-            self.by_summoner.__name__,
-            region,
-            LeagueApiV4Urls.by_summoner,
-            encrypted_summoner_id=encrypted_summoner_id,
-        )
+        pass
 
     def by_puuid(self, region: str, puuid: str):
         """
@@ -104,12 +82,7 @@ class LeagueApiV4(NamedEndpoint):
 
         :returns: Set[LeagueEntryDTO]
         """
-        return self._request_endpoint(
-            self.by_puuid.__name__,
-            region,
-            LeagueApiV4Urls.by_puuid,
-            puuid=puuid,
-        )
+        pass
 
     def entries(self, region: str, queue: str, tier: str, division: str, page: int = 1):
         """
@@ -123,12 +96,4 @@ class LeagueApiV4(NamedEndpoint):
 
         :returns: Set[LeagueEntryDTO]
         """
-        return self._request_endpoint(
-            self.entries.__name__,
-            region,
-            LeagueApiV4Urls.entries,
-            queue=queue,
-            tier=tier,
-            division=division,
-            page=page,
-        )
+        pass

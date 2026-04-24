@@ -29,12 +29,7 @@ class ChampionMasteryApiV4(NamedEndpoint):
                                             Mastery information for player and champion
                                             combination.
         """
-        return self._request_endpoint(
-            self.by_puuid.__name__,
-            region,
-            ChampionMasteryApiV4Urls.by_puuid,
-            puuid=puuid,
-        )
+        pass
 
     def by_puuid_by_champion(self, region: str, puuid: str, champion_id: int):
         """
@@ -47,13 +42,7 @@ class ChampionMasteryApiV4(NamedEndpoint):
         :returns: ChampionMasteryDTO: This object contains single Champion Mastery
                                       information for player and champion combination.
         """
-        return self._request_endpoint(
-            self.by_puuid_by_champion.__name__,
-            region,
-            ChampionMasteryApiV4Urls.by_puuid_by_champion,
-            puuid=puuid,
-            champion_id=champion_id,
-        )
+        pass
 
     def top_by_puuid(self, region: str, puuid: str, count: int = None):
         """
@@ -66,13 +55,7 @@ class ChampionMasteryApiV4(NamedEndpoint):
 
         :returns: List[ChampionMasteryDto]
         """
-        return self._request_endpoint(
-            self.top_by_puuid.__name__,
-            region,
-            ChampionMasteryApiV4Urls.top_by_puuid,
-            puuid=puuid,
-            count=count,
-        )
+        pass
 
     def scores_by_puuid(self, region: str, puuid: str):
         """
@@ -84,9 +67,4 @@ class ChampionMasteryApiV4(NamedEndpoint):
 
         :returns: int
         """
-        return self._request_endpoint(
-            self.scores_by_puuid.__name__,
-            region,
-            ChampionMasteryApiV4Urls.scores_by_puuid,
-            puuid=puuid,
-        )
+        pass

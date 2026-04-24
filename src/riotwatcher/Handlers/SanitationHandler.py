@@ -33,6 +33,4 @@ class SanitationHandler(RequestHandler):
         :param query_params: dict: the parameters to the url that is being queried,
                                    e.g. ?key1=val&key2=val2
         """
-        region_ok = self._region_expr.fullmatch(region)
-        if region_ok is None:
-            raise IllegalArgumentError("region", region)
+        pass

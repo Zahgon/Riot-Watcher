@@ -24,9 +24,7 @@ class MatchApi(NamedEndpoint):
 
         :returns: List[string]
         """
-        return self._request_endpoint(
-            self.by_puuid.__name__, region, MatchApiUrls.by_puuid, puuid=puuid
-        )
+        pass
 
     def by_id(self, region: str, match_id: str):
         """
@@ -34,6 +32,4 @@ class MatchApi(NamedEndpoint):
 
         :returns: MatchDto
         """
-        return self._request_endpoint(
-            self.by_id.__name__, region, MatchApiUrls.by_id, match_id=match_id
-        )
+        pass

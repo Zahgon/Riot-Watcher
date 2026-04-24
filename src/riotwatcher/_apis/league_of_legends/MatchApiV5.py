@@ -29,9 +29,7 @@ class MatchApiV5(NamedEndpoint):
 
         :returns: MatchDto
         """
-        return self._request_endpoint(
-            self.by_id.__name__, region, MatchApiV5Urls.by_id, match_id=match_id
-        )
+        pass
 
     @remap_region_to_platform(1)
     def matchlist_by_puuid(
@@ -70,18 +68,7 @@ class MatchApiV5(NamedEndpoint):
 
         :returns: List[string]
         """
-        return self._request_endpoint(
-            self.matchlist_by_puuid.__name__,
-            region,
-            MatchApiV5Urls.matchlist_by_puuid,
-            puuid=puuid,
-            start=start,
-            count=count,
-            queue=queue,
-            type=type,
-            startTime=start_time,
-            endTime=end_time,
-        )
+        pass
 
     @remap_region_to_platform(1)
     def timeline_by_match(self, region: str, match_id: str):
@@ -95,9 +82,4 @@ class MatchApiV5(NamedEndpoint):
 
         :returns: MatchTimelineDto
         """
-        return self._request_endpoint(
-            self.timeline_by_match.__name__,
-            region,
-            MatchApiV5Urls.timeline_by_match,
-            match_id=match_id,
-        )
+        pass

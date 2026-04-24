@@ -43,24 +43,7 @@ class MatchApi(NamedEndpoint):
 
         :returns: List[string]
         """
-        args = {
-            "count": count,
-            "start": start,
-        }
-
-        if start_time:
-            args["startTime"] = start_time
-
-        if end_time:
-            args["endTime"] = end_time
-
-        return self._request_endpoint(
-            self.by_puuid.__name__,
-            region,
-            MatchApiUrls.by_puuid,
-            puuid=puuid,
-            **args,
-        )
+        pass
 
     @remap_region_to_platform(1)
     def by_id(self, region: str, match_id: str):
@@ -72,6 +55,4 @@ class MatchApi(NamedEndpoint):
 
         :returns: MatchDto
         """
-        return self._request_endpoint(
-            self.by_id.__name__, region, MatchApiUrls.by_id, match_id=match_id
-        )
+        pass

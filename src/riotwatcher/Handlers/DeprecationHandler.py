@@ -21,25 +21,4 @@ class DeprecationHandler(RequestHandler):
         url: str,
         response: Response,
     ) -> Response:
-        deprecation = response.headers.get("X-Riot-Deprecated")
-        if deprecation is not None:
-            try:
-                deprecation = datetime.utcfromtimestamp(int(deprecation) // 1000)
-            except (OSError, ValueError):
-                # API returned unexected value in header, so just do nothing
-                return response
-            key = f"{endpoint_name}.{method_name}"
-            if key not in self._warned:
-                # technically race condition here, but worst case is we double log
-                self._warned.add(key)
-                LOG.warning(
-                    " ".join(
-                        [
-                            "Method %s has been deprecated by Riot!",
-                            "It will no longer work after %s",
-                        ]
-                    ),
-                    key,
-                    deprecation,
-                )
-        return response
+        pass

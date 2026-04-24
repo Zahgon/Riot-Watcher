@@ -23,9 +23,7 @@ class MatchApi(NamedEndpoint):
 
         :returns: MatchDto
         """
-        return self._request_endpoint(
-            self.by_id.__name__, region, MatchApiUrls.by_id, match_id=match_id
-        )
+        pass
 
     def matchlist_by_puuid(self, region: str, puuid: str):
         """
@@ -33,12 +31,7 @@ class MatchApi(NamedEndpoint):
 
         :returns: MatchlistDto
         """
-        return self._request_endpoint(
-            self.matchlist_by_puuid.__name__,
-            region,
-            MatchApiUrls.matchlist_by_puuid,
-            puuid=puuid,
-        )
+        pass
 
     def recent_matches(self, region: str, queue: str):
         """
@@ -52,9 +45,4 @@ class MatchApi(NamedEndpoint):
 
         :returns: RecentMatchesDto
         """
-        return self._request_endpoint(
-            self.recent_matches.__name__,
-            region,
-            MatchApiUrls.recent_matches,
-            queue=queue,
-        )
+        pass

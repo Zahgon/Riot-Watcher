@@ -24,6 +24,4 @@ class RankedApi(NamedEndpoint):
 
         :returns: LeaderboardDto
         """
-        return self._request_endpoint(
-            self.leaderboards.__name__, region, RankedApiUrls.leaderboards
-        )
+        pass
